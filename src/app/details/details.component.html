@@ -1,0 +1,45 @@
+<div class="container col-5 offset-3">
+    <form #LoginForm="ngForm">
+      <h1 class="login-title">Bill Detils</h1>
+      <div class="form-group">
+        <label>GSTN</label>
+        <input class="form-control" #gstinControl="ngModel" placeholder="Gstin number" [(ngModel)]="bill.gstin" name="gstin"required>
+      </div>
+      <div class="form-group">
+        <label>Company Name</label>
+        <input class="form-control" #companyControl="ngModel" placeholder="Company name" [(ngModel)]="bill.company" name="company" type="text" required>
+      </div>
+      <div class="form-group">
+        <label>Date</label>
+        <input class="form-control" #dateControl="ngModel" placeholder="dd/mm/yy" [(ngModel)]="bill.date" name="date" type="txt" required>
+      </div>
+      <div class="form-group">
+        <label>Amount</label>
+        <input class="form-control" #amountControl="ngModel" placeholder="Rs. XXXXX" [(ngModel)]="bill.amount" name="amount" type="txt" required>
+      </div>
+      <div class="form-group">
+        <label>Paid by:</label>
+        <input class="form-control" #paidbyControl="ngModel" placeholder="John Doe" [(ngModel)]="bill.paidby" name="paidby" type="txt" required>
+      </div>
+      <div class="form-group">
+        <label>Contact Number of Vendor</label>
+        <input class="form-control" #vendornumControl="ngModel" placeholder="+91-XXXXXXXXXXXX" [(ngModel)]="bill.vendornum" name="vendornum" type="txt" required>
+      </div>
+      <div class="form-group">
+        <label>Notes</label>
+        <input class="form-control" #notesControl="ngModel" placeholder="(Online/Offline etc.)" [(ngModel)]="bill.notes" name="notes" type="txt" required>
+      </div>
+      <button type="submit" class="btn btn-info btn-lg" (click)="onSubmit()">Submit</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small special-color-dark pt-4">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© <i class="icon ion-heart"></i> 2019 : Built by Tulsani
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->

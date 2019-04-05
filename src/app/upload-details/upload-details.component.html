@@ -1,0 +1,20 @@
+
+<div class="container col-7 offset-3">
+  <h2 class="heading">Upload Bill Image</h2>
+  <br>
+  <input type="file" (change)="handleFiles($event)"> 
+  <br>
+  <br>
+  <button class="btn btn-primary" (click)="uploadFiles()">Upload Images</button>
+</div>
+<br><br>
+<div *ngIf="upload">
+  <div class="col-8 offset-2">
+  <div class="progress">
+    <div class = "progress-bar progress-bar-animated"
+    [ngStyle]="{'width':upload?.progress+'%'}"></div>
+  </div>
+  Uploading: {{upload?.progress}}% Complete
+</div>
+  <app-details></app-details>
+</div>

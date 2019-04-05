@@ -11,6 +11,7 @@
   },
   "private": true,
   "dependencies": {
+    "2": "^2.0.0",
     "@angular/animations": "^6.0.3",
     "@angular/common": "^6.0.3",
     "@angular/compiler": "^6.0.3",
@@ -20,8 +21,13 @@
     "@angular/platform-browser": "^6.0.3",
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
+    "angularfire": "~2.0.0",
+    "angularfire2": "^5.1.2",
     "core-js": "^2.5.4",
-    "rxjs": "^6.0.0",
+    "firebase": "^5.9.1",
+    "ngx-bootstrap": "^3.2.0",
+    "rxjs": "~6.3.3",
+    "rxjs-compat": "^6.4.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
